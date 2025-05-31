@@ -1,4 +1,6 @@
 # Google Gemini
+query: https://www.google.com/search?q=network+manager+internet+sharing+set+ip
+
 AI Overview
 >To configure internet sharing with Network Manager and set a specific IP address, you'll need to enable the sharing feature and then configure the shared network's IP settings. Network Manager will typically assign a subnet like 10.42.0.0/24, but you can customize this if needed, according to Ask Ubuntu. 
 >
