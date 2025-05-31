@@ -1,4 +1,18 @@
-# [How to control IP ranges of Network Manager's hotspots?](https://askubuntu.com/questions/844913/how-to-control-ip-ranges-of-network-managers-hotspots)
->After hours of trying different solutions, I was finally able to specify a subnet for a Hotspot connection using Network Manager and then set a manual ip on the client device for a sort of static ip. None of the dnsmasq/dhcp methods work with Network Manager. You have to edit the Network Manager connection file. These files are generated for each connection in the following directory:
->
->`/etc/NetworkManager/system-connections`
+# Works!
+## command: `nmcli connection modify local ipv4.addresses`
+Guide: https://fedoramagazine.org/internet-connection-sharing-networkmanager/
+
+```
+nic=eno2
+nmcli connection add type ethernet ifname $nic ipv4.method shared con-name local
+nmcli connection modify local ipv4.addresses 10.42.1.1/24
+nmcli connection up local
+
+test(){
+  nmcli device
+  ip a
+}
+```
+
+
+sch: https://www.google.com/search?q=network+manager+sharing+dnsmasq+set+subnet+ip

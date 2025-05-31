@@ -1,1 +1,0 @@
-- https://askubuntu.com/questions/691986/network-manager-shared-connection-and-manual-settings-of-the-interface
