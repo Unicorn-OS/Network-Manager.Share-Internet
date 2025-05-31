@@ -1,6 +1,8 @@
 # AI Answer:
 query: https://www.google.com/search?q=network+manager+sharing+dnsmasq+set+subnet+ip
 
+guide: https://fedoramagazine.org/internet-connection-sharing-networkmanager/#:~:text=Changing%20the%20shared%20IP%20range
+
 ># AI Overview
 >To configure NetworkManager to use a specific IP subnet with dnsmasq for shared connections, you'll need to modify the dnsmasq configuration files within the `/etc/NetworkManager/dnsmasq.d/` directory. You'll also need to enable the dnsmasq plugin within NetworkManager. 
 >
